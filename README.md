@@ -57,7 +57,7 @@ The tool runs entirely in the browser. No data is collected or transmitted.
 
 ## Last Reviewed
 
-**June 2025** — Reflects the post-vacatur regulatory posture as of that date. The LDT/SaMD regulatory landscape is actively evolving. Verify currency before relying on this tool for compliance or training purposes.
+**June 2026** — Reflects the post-vacatur regulatory posture as of that date. The LDT/SaMD regulatory landscape is actively evolving. Verify currency before relying on this tool for compliance or training purposes.
 
 ---
 
@@ -69,7 +69,7 @@ Founder & Principal Consultant, TechInHSR LLC
 
 When citing this tool:
 
-> Eto, T. (2025). *AI/ML LDT vs IVD-SaMD Classification Tool* [Interactive teaching resource]. TechInHSR LLC. https://techinhsr.com
+> Eto, T. (2026). *AI/ML LDT vs IVD-SaMD Classification Tool* [Interactive teaching resource]. TechInHSR LLC. https://techinhsr.com
 
 ---
 

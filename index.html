@@ -198,7 +198,7 @@
     .branch-list { list-style: none; }
     .branch-list li { font-size: 0.82rem; line-height: 1.4; color: var(--text-mid); margin-bottom: 0.55rem; padding-left: 1rem; position: relative; }
     .branch-list li::before { content: '›'; position: absolute; left: 0; color: var(--teal-bright); font-weight: 700; }
-    .callout {
+    .teaching-callout {
       margin-top: 0.9rem; padding: 0.75rem 0.9rem;
       background: var(--gold-pale); border: 1px solid var(--gold-border);
       border-radius: 12px; font-size: 0.8rem; color: var(--text); line-height: 1.45;
@@ -266,23 +266,22 @@
         <div class="last-updated">Last updated: June 2026</div>
       </div>
       <div class="text-center" style="margin-bottom: 1.5rem;">
-        <div class="pill reveal">One-Page Resource</div>
         <h1 class="reveal">When is an AI/ML LDT<br><em>really</em> IVD-SaMD?</h1>
-        <p class="lead reveal" style="margin: 0 auto;">FDA's 2024 LDT rule was vacated March 31, 2025 and formally rescinded September 19, 2025 — but FDA device oversight of AI-enabled software functions remains fully intact. The classification question still matters.</p>
+        <p class="lead reveal" style="margin: 0 auto;">FDA's 2024 LDT rule was vacated March 31, 2025 and formally rescinded September 19, 2025, but FDA device oversight of AI-enabled software functions remains fully intact. The classification question still matters.</p>
       </div>
       <div class="anchor-grid">
         <div class="card reveal">
-          <div class="card-label teal">Anchor 1</div>
+          <div class="card-label teal">Principle 1</div>
           <div class="card-title">Start with intended use</div>
           <p class="small">If the function diagnoses, predicts, stratifies, or recommends treatment for disease, FDA device analysis is triggered first.</p>
         </div>
         <div class="card reveal">
-          <div class="card-label gold">Anchor 2</div>
-          <div class="card-title">Human role matters</div>
-          <p class="small">Transparent support for an HCP may fit non-device CDS. Opaque or directive outputs push the function toward device/SaMD treatment.</p>
+          <div class="card-label gold">Principle 2</div>
+          <div class="card-title">The clinician's role matters</div>
+          <p class="small">Transparent support for a healthcare provider (HCP) may fit non-device CDS. Opaque or directive outputs push the function toward device/SaMD treatment.</p>
         </div>
         <div class="card reveal">
-          <div class="card-label muted">Anchor 3</div>
+          <div class="card-label muted">Principle 3</div>
           <div class="card-title">LDT label is not enough</div>
           <p class="small">Calling something an LDT does not answer whether the software behaves like IVD-SaMD. The function and workflow do.</p>
         </div>
@@ -305,7 +304,7 @@
         <!-- LEFT: tree -->
         <div class="reveal">
           <div class="pill">Decision Tree</div>
-          <h2>Working test: AI/ML LDT vs IVD-SaMD</h2>
+          <h2>Quick guide: AI/ML LDT vs IVD-SaMD</h2>
           <p class="small" style="max-width: 560px; margin-bottom: 0.75rem;">The more the software analyzes medical signals or images, produces patient-specific diagnostic output, and cannot be independently checked by the clinician, the more it looks like regulated IVD-SaMD.</p>
 
           <div class="legend">
@@ -354,7 +353,7 @@
               <div class="node yes">
                 <div class="node-label yes-label">Q4 — Key differentiator</div>
                 <h3>Independent review possible?</h3>
-                <p>Can the HCP meaningfully review the basis, rather than trusting a black-box output?</p>
+                <p>Can the healthcare provider (HCP) meaningfully review the basis for the output, rather than simply accepting a black-box result?</p>
               </div>
               <div class="exit-stub" style="margin-top: 8px;">If Yes → may qualify as non-device CDS</div>
             </div>
@@ -370,20 +369,20 @@
 
         <!-- RIGHT: branch panel -->
         <div class="branch-panel reveal">
-          <div class="card-label teal" style="margin-bottom: 6px;">Practical branches</div>
+          <div class="card-label teal" style="margin-bottom: 6px;">Practical Tips</div>
           <div class="divider"></div>
           <ul class="branch-list">
             <li><strong>Stop early:</strong> No medical intended use — not device software.</li>
-            <li><strong>CDS candidate:</strong> Medical use but transparent, non-directive; HCP can independently review the basis.</li>
+            <li><strong>CDS candidate:</strong> Medical use but transparent, non-directive; the HCP can independently review the reasoning behind the output.</li>
             <li><strong>Device-leaning:</strong> Analyzes images or signals and converts them into diagnostic interpretation.</li>
             <li><strong>Strongest IVD-SaMD case:</strong> Black-box or directive output that clinicians cannot independently verify.</li>
           </ul>
-          <div class="callout">
-            <strong>Important Note:</strong> "LDT is a deployment context. IVD-SaMD is a functional and regulatory characterization."
+          <div class="teaching-callout">
+            <strong>Teaching phrase:</strong> "LDT is a deployment context. IVD-SaMD is a functional and regulatory characterization."
           </div>
           <div style="margin-top: 1rem; padding-top: 0.9rem; border-top: 1px solid var(--border);">
             <div class="card-label muted" style="margin-bottom: 6px;">Remember</div>
-            <p class="micro">The 2024 LDT rule is gone, but the CDS/SaMD framework still turns on intended use, signal/image analysis, and whether a clinician can independently review the basis. The January 2026 FDA CDS guidance update extended enforcement discretion to single clinically appropriate recommendations — but the independent review criterion remains the key differentiator. The function determines the classification; the deployment context does not.</p>
+            <p class="micro">The 2024 LDT rule is gone, but FDA still classifies AI/ML software based on what it does: its intended use, whether it analyzes medical signals or images, and whether the clinician can independently review the reasoning behind its output. The January 2026 FDA CDS guidance update allows enforcement discretion for software that gives a single clinically appropriate recommendation — but the ability to independently review the output remains the key factor. What the software does determines how it is classified. Where it is deployed does not.</p>
           </div>
         </div>
       </div>
@@ -401,15 +400,15 @@
         <div class="brand-mark"><span class="dot"></span>TechInHSR LLC</div>
         <div class="last-updated">Last updated: June 2026</div>
       </div>
-      <h2 class="reveal">Current legal posture — what changed, what held</h2>
+      <h2 class="reveal">Current legal status — what changed, what held</h2>
       <div class="status-grid reveal">
         <div class="card">
           <div class="card-label teal">Still true under current administration</div>
           <ul class="branch-list" style="margin-top: 0.5rem;">
             <li>FDA continues to regulate AI-enabled device software functions and issued 2025 draft guidance on lifecycle management and submission content.</li>
-            <li>The CDS framework still turns on intended use, signal/image analysis, and whether a clinician can independently review the basis. Note: January 2026 FDA CDS guidance update extended enforcement discretion to single clinically appropriate recommendations; the independent review criterion remains operative.</li>
+            <li>FDA still classifies AI/ML software based on what it does: its intended use, whether it analyzes medical signals or images, and whether a clinician can independently review the reasoning behind its output. Note: a January 2026 FDA update extended enforcement discretion to software that gives a single clinically appropriate recommendation, but the independent review requirement remains operative.</li>
             <li>An AI workflow that converts specimen data into a patient-specific diagnostic output still looks conceptually like IVD-SaMD.</li>
-            <li>Federal AI policy frameworks issued by the current administration (including the July 2025 AI Action Plan and related executive orders) are deregulatory in orientation but do not displace FDA's existing statutory authority over AI-enabled medical devices.</li>
+            <li>Federal AI policy frameworks issued by the current administration (including the July 2025 AI Action Plan and related executive orders) are deregulatory in orientation but do not remove FDA's existing legal authority over AI-enabled medical devices.</li>
           </ul>
         </div>
         <div class="card">
@@ -417,7 +416,7 @@
           <ul class="branch-list" style="margin-top: 0.5rem;">
             <li>The 2024 FDA LDT final rule was vacated by a federal district court (E.D. Tex.) on March 31, 2025.</li>
             <li>FDA reverted the amended text in 21 CFR 809.3(a) effective September 19, 2025.</li>
-            <li>Most LDTs are back in a CLIA-centered posture. FDA's reach over tests laboratories call "LDTs" is legally contested.</li>
+            <li>Most LDTs are back under CLIA oversight. FDA's ability to reach tests that laboratories call "LDTs" is legally contested.</li>
             <li>The four-year, five-stage enforcement phase-out (Stages 1–5, 2025–2028) no longer has legal force.</li>
           </ul>
         </div>
@@ -430,7 +429,7 @@
         </div>
         <div class="spectrum-card borderline">
           <div class="spectrum-label borderline">Borderline</div>
-          <p class="small">AI risk score layered into a lab workflow — transparent rationale, required human confirmation before reporting. Classification depends on how directive the output is in practice.</p>
+          <p class="small">AI risk score layered into a lab workflow. Transparent rationale, required human confirmation before reporting. Classification depends on how directive the output is in practice.</p>
         </div>
         <div class="spectrum-card device">
           <div class="spectrum-label device">Likely IVD-SaMD-like</div>
